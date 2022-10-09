@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es-ES /">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            #contenedor{
+                width: 50%;
+                margin: auto;
+            }
+            /* Pasar a botón un hipervinculo */
+            a{
+                display: block;
+                width: 100px;
+                height: 20px;
+                margin: 13px;
+                padding: 13px;
+                background-color: rgb(234, 180, 180);
+                border: 2px solid rebeccapurple;
+                text-align: center;
+                box-shadow: 2px 2px 1px;
+            }
+            /*
+            a:hover{
+                transform: scale(0.5);
+            }
+            */
+            a:active{
+                transform: scale(0.5);
+            }
+        </style>
+    </head>
+    <body>
+        <p>Empecemos la descarga ó download...</p>
+        <a href="documento.html" download="download.html">Descargar</a>
+        <!--<a href="imagen.jpg" download="mi-imagen"></a>-->
+        <div></div>
+    </body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>listas</title>
+        <style>
+            /* la # identifica un elemento único*/
+            #contenedor{
+                margin-left: 30px;
+                margin-top:  25px;
+                border: 2px solid red;
+                margin-right: 75px;
+                padding-left: 5%;
+                padding-right: 5%;
+            }
+            ol{
+                list-style-type:upper-roman;
+            }
+            p{
+                /*text-indent: 13px;*/
+                line-height: 27px;
+            }
+            /*p::first-letter{
+                font-size: 42px;
+                float: left;
+            }*/
+            span{
+                font-size: 2.7rem;
+                float: left;
+                margin-right: 7px;
+                margin-left: 22px;
+            }
+            p:nth-child(1){
+                color: rgb(255, 0, 0);
+                font-weight:  bold;
+            }
+            p:nth-of-type(2){
+                color: rgb(1, 253, 110);
+                font-weight:  bold;
+            }
+            p:last-of-type{
+                color: rgb(255, 0, 221);
+                font-weight:  bold;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="contenedor">
+        <p>Hola Jesús</p>
+        <h1>Uso de listas</h1>
+        <hr /><!--Insertar una linea de separación-->
+
+        <!--LOS ATRIBUTOS YA SON MAS ACONSEJABLE HACERLO DESDE CSS Y STYLE-TYPE-->
+        <ul>
+            <li>Me tengo que levantar.</li><!--pone un punto de listas <ul> y <ol> son puntos ordenados o desordenados-->
+            <li>Tengo que desayunar.</li>
+        </ul>
+        <ol>
+            <li>Me tengo que levantar.</li><!--pone un punto de listas <ul> y <ol> son puntos ordenados o desordenados-->
+            <li>Tengo que desayunar.</li>
+        </ol>
+        <ol type="A">
+            <li>Me tengo que levantar.</li><!--pone un punto de listas <ul> y <ol> son puntos ordenados o desordenados-->
+            <li>Tengo que desayunar.</li>
+        </ol>
+        <ol type="I">
+            <li>Me tengo que levantar.</li><!--pone un punto de listas <ul> y <ol> son puntos ordenados o desordenados-->
+            <li>Tengo que desayunar.</li>
+            <li>Me tengo que ...</li><!--pone un punto de listas <ul> y <ol> son puntos ordenados o desordenados-->
+            <li>Tengo que ...
+                <ul>
+                    <li>Uno</li>
+                    <li>Dos</li>
+                    <li>Tres</li>
+                </ul>
+            </li>
+        </ol>
+        <ul type="circle">
+            <li>Me tengo que levantar.</li><!--pone un punto de listas <ul> y <ol> son puntos ordenados o desordenados-->
+            <li>Tengo que desayunar.</li>
+        </ul>
+        <ul type="square">
+            <li>Me tengo que levantar.</li><!--pone un punto de listas <ul> y <ol> son puntos ordenados o desordenados-->
+            <li>Tengo que desayunar.</li>
+        </ul>
+        <span>L</span><p>orem, ipsum dolor sit amet consectetur adipisicing elit. Placeat incidunt magnam voluptatum doloremque eius laudantium repellendus ab. Atque impedit molestias nostrum culpa, quod, nemo quae veritatis, esse obcaecati magnam explicabo unde! Natus aspernatur doloribus obcaecati quas voluptatem hic modi deserunt ducimus omnis ullam veniam impedit id nihil, illum voluptate dolorem illo aliquid ea corrupti, numquam delectus, officiis qui error aperiam. Adipisci vel maxime nostrum animi debitis totam, aut expedita consectetur, laboriosam minus earum facilis veritatis architecto. Obcaecati, quae eos quo maxime inventore blanditiis dolorem quasi, minus iure quaerat cumque nam est dignissimos harum dolores reprehenderit ad adipisci alias dolor culpa aut consequatur, quisquam odit itaque! Fuga fugit nisi quo, excepturi tempora, est et veritatis suscipit id laudantium quasi necessitatibus error autem mollitia soluta nostrum consequatur enim, temporibus eum fugiat labore maiores? Incidunt, similique consequuntur aperiam necessitatibus minima quibusdam sunt deserunt placeat sequi corrupti ea accusamus, dignissimos perferendis nesciunt quod reiciendis accusantium ipsam modi magnam facilis, molestiae officiis? Hic natus qui, expedita enim error voluptatem molestiae nulla vitae! Sunt officia cum nostrum soluta deserunt rem consequuntur. Deserunt, minima aliquid itaque aspernatur ex sunt eveniet atque adipisci quia aut. Inventore beatae ipsum dolor quod suscipit, veritatis a, tempora, natus fugiat ipsam ea amet assumenda omnis? Qui voluptate hic voluptatum architecto esse reprehenderit repellendus, facilis a at numquam repudiandae similique eius assumenda, eum reiciendis maiores tempore accusantium quos dolores ipsam? Recusandae, eaque soluta! Ut, beatae corporis deserunt pariatur quos expedita nesciunt magnam aliquam necessitatibus nihil ipsam obcaecati quia voluptate dolore incidunt mollitia reiciendis laudantium quis vitae molestias? Eligendi officia voluptate facilis laborum reiciendis voluptatum ipsa fugit a. Ipsa sequi architecto ipsum esse quam ullam quidem, corrupti aliquam placeat non, soluta harum delectus suscipit rerum repellat hic autem asperiores labore! Eaque at quaerat, esse tempore laudantium nihil tenetur quia dicta voluptatum debitis, dolor totam eum? Veniam mollitia eaque exercitationem sint molestiae quia magni cum quos, eius quod?</p>
+        <p>Hasta la proxima...&#169</p>
+        </div>
+    </body>
+</html>

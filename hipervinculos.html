@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Hipervínculos</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            #contenedor{
+                width: 60%;
+                margin: auto;
+            }
+            nav{
+                height: 250px;
+
+            }
+            .caja{
+                height: 250px;
+                border: 2px solid red;
+                margin-top: 25px;
+            }
+            #volver{
+                position: fixed;
+                bottom: 13px;
+                right: 20px;
+                color: red;
+                background-color: bisque;
+                font-size: 1.5rem;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div id="contenedor">
+            <a name="menu"></a><!--Es el marcador-->
+            <h1>Menú</h1>
+            <nav>
+                <ul>
+                    <li><a href="#caja1">Ir a caja 1</a></li><!--Es el hipervinculo-->
+                    <li><a href="#caja2">Ir a caja 2</a></li>
+                    <li><a href="#caja3">Ir a caja 3</a></li>
+                    <li><a href="#caja4">Ir a caja 4</a></li>
+                </ul>
+            </nav>
+            <a name="caja1"></a>
+            <div class="caja" id="caja1">
+                <p>caja 1</p>
+                <a href="https://www.google.es" title="Ver Google España">Ver Google</a>
+            </div>
+
+            <a name="caja2"></a>
+            <div class="caja">
+                <p>caja 2</p>
+                <a href="https://www.google.com/search?client=firefox-b-d&q=Burgos" title="Buscar datos de Burgos" >Datos de Burgos</a>
+            </div>
+
+            <a name="caja3"></a>
+            <div class="caja">
+                <p>caja 3</p>
+                <a href="https://cadenaser.com/resizer/rVKkC_xVDrvSL9bRSyS0r5qOvHg=/736x552/filters:format(jpg):quality(70)/cloudfront-eu-central-1.images.arcpublishing.com/prisaradio/27QGRE4HZNJFJBBOFX7YVTJWCM.jpg" title="Ver Ún Símbolo">Ver el Simbolo</a>
+            </div>
+            <a name="caja4"></a>
+            <div class="caja">
+                <p>caja 4</p>
+            </div>
+            <div id="volver"><p><a href="#menu">&#94;</a></p></div>
+        </div>
+    </body>
+</html>

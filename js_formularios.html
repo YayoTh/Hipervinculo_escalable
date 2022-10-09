@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>js y formularios</title>
+        <style>*{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            }
+            #contenedor{
+                width: 40%;
+                margin: auto;
+            }
+            input, label{
+                display: block;
+            }
+            input[type="submit"], input[type="text"]{
+                width: 100%;
+            }
+        </style>
+        <script>
+            function altaUsuuarios(e){
+                let nombre = document.getElementById("nombre").value;
+                let apellidos = document.getElementById("apellidos").value;
+
+                document.getElementById("usuarios").innerHTML += "<p>" + nombre + " " + apellidos + "</p>";
+                e.preventDefault();
+            }
+        </script>
+    </head>
+    <body>
+        <div id="contenedor">
+            <form action="mailto:jemapego@outlook.com" method="get">
+                <label for="nombre">Inserte Nombre:</label>
+                <input type="text" id="nombre" name="nombre" />
+                <label for="apellidos">Inserte apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos" />
+
+                <input type="submit" value="Enviar..." onclick="altaUsuuarios()" />
+            </form>
+            <div id="usuarios"></div>
+        </div>
+    </body>
+</html>

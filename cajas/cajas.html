@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>El úso del float</title>
+        <style>
+            *{ /* Destornillador/Selector universal*/
+                margin:      0;
+                padding:     0;
+                box-sizing: border-box;
+            }
+            #contenedor{ /* Selector de identificacion */
+                /* ocupe 50% del ancho y qye este centrado en pantalla */
+                width:      50%;
+                margin: 30px auto 0 auto;
+                min-height:   150px;
+                /*border: 3px solid black; solo como guia luego se quita*/
+                border: 1px solid black;
+            }
+            .cajas{
+                display: flex;
+            }
+            .caja{ /* Selector de clases */
+                /* Las cajas de la aplicacion tendran 150px de alto y 33% de ancho  de su contenedor  */
+                height:   150px;
+                width:      33%;
+                /* Ponemos un borde para cada caja, asi determinamos su espacio */
+                border: 1px solid red;
+                /* SQuiero poner las tres cajas en linea */
+                /* float:     left; Se pone display: flex; */
+                box-shadow: 5px 5px 10px blue;
+                display: flex;
+                    justify-content: center;
+                    align-items: center;
+            }
+            .central{
+                margin-left:  0.5%;
+                margin-right: 0.5%;
+            }
+            .efectos{
+                text-shadow: 0 0 3px #000dff;
+                text-align: center;
+                font: 1.5rem Georgia;
+            }
+            img{
+                width:   67%;
+                height: auto;
+                object-fit: cover;
+                object-position: center center;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="contenedor"><!--la # es para id y el . son class-->
+            <div class="cajas">
+                <div class="caja">
+                    <p class="efectos">Hola Gente!</p>
+                </div>
+                <div class="caja central">
+                    <p class="efectos">Hola Gente!</p>
+                </div>
+                <div class="caja">
+                    <img src="../fotos/Corrado G60.tiff" alt="Corrado G60">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

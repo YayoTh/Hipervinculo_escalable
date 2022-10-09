@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>El Antes y el Después de una etiqueta</title>
+        <style>
+            p::before{
+                content: "Yayo dice: ";
+                background-color: aquamarine;
+            }
+            p::after{
+                content: "Hola Gente...!";
+                color: red;
+            }
+            em::before, em::after{
+                content: '"';
+                font-size: 1.5rem;
+                font-weight: bold;
+            }
+            em{
+                font-weight: bold;
+            }
+            img{
+                width: 100%;
+                max-width: 640px;
+                height: auto;
+                position: absolute;
+                    top: 0;
+                    z-index: -1;
+                    display: block;
+            }
+            div#foto{
+                position: relative;
+                max-width: 640px;
+            }
+            div#foto::before{
+                content: "130.000€";
+                font-size: 1.5rem;
+                width: 100px;
+                height: 22px;
+                background-color: rgb(242, 255, 0);
+                position: absolute;
+                    top: 55px;
+                    left: 22px;
+                    right: 0;
+                    bottom: 0;
+                transform: rotate(-45deg);/*grados en CSS es deg*/
+
+            }
+            div#foto::after{
+                content: "Corrado G60";
+                color: rgb(255, 0, 221);
+                position: absolute;
+                    /*top: 100px;*/
+                    /*left: 100px;*/
+                    right: 0px;
+                    bottom: 0px;
+                    z-index: 1000;
+            }
+        </style>
+    </head>
+    <body>
+        <p>...</p><!--etiqueta de tipo bloque-->
+        <em>Catalunya es única</em><!--etiqueta em es par enfasis-->
+        <div id="foto">
+            <img src="../fotos/Corrado G60.tiff" alt="Corrado G60">
+            <p>Corrado G60</p>
+        </div>
+    </body>
+</html>
